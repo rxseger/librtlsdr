@@ -26,7 +26,26 @@ extern "C" {
 
 #include <stdint.h>
 #include <rtl-sdr_export.h>
-#include <rtl_tcp.h>
+
+/*!
+ * This enum defines the possible commands in rtl_tcp
+ */
+enum RTL_TCP_COMMANDS {
+    SET_FREQUENCY             = 0x01,
+    SET_SAMPLE_RATE           = 0x02,
+    SET_GAIN_MODE             = 0x03,
+    SET_GAIN                  = 0x04,
+    SET_FREQUENCY_CORRECTION  = 0x05,
+    SET_IF_STAGE              = 0x06,
+    SET_TEST_MODE             = 0x07,
+    SET_AGC_MODE              = 0x08,
+    SET_DIRECT_SAMPLING       = 0x09,
+    SET_OFFSET_TUNING         = 0x0A,
+    SET_RTL_CRYSTAL           = 0x0B,
+    SET_TUNER_CRYSTAL         = 0x0C,
+    SET_TUNER_GAIN_BY_INDEX   = 0x0D,
+    SET_TUNER_BANDWIDTH       = 0x0E
+};
 
 typedef struct rtlsdr_dev rtlsdr_dev_t;
 

@@ -28,7 +28,6 @@ SET( LIBUSB ${LIBUSBBASE}/MinGW32/static/libusb-1.0.a )
 SET( SOCKLIBS ws2_32 wsock32 )
 
 SET( RTLLIBFILES
-    ../include/rtl_tcp.h
     ../include/reg_field.h
     ../include/rtlsdr_i2c.h
 
